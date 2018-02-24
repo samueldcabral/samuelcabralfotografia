@@ -1,0 +1,95 @@
+@media all and (max-width: 1100px){
+    header{
+        grid-area: Header;
+        display: grid;
+        grid-template-columns: 4fr 1fr 4fr;
+        grid-template-areas: 
+        "Img Social Nav";
+        height: 100px;
+        box-shadow: 1px 1px 30px #0c0c0c4f;    
+    }
+
+    .form label, input, textarea{
+        position: relative;
+        display: block;
+        margin: 5px auto;
+        line-height: 1.2rem;
+        width: 80%;
+        padding: 1px;    
+    }
+
+    .about-me p{
+        padding: 0px 50px;
+        text-align: justify;
+        font-weight: 600;   
+        font-family: 'Raleway','sans-serif';
+        line-height: 30px;
+    }
+}   
+
+@media all and (max-width: 950px){
+    header{
+        grid-area: Header;
+        display: flex;
+        flex-flow: column;
+        height: 250px;
+        box-shadow: 1px 1px 30px #0c0c0c4f;    
+    }
+
+    .logotipo{
+        margin-bottom: 10px;
+    }
+
+    .navigation{
+        margin: auto;
+    }
+
+    .social{
+        margin: 0 auto;
+    }
+
+    .navigation ul{
+        margin-top: 0;
+        list-style: none;
+        display: block;
+        font-size: 1.5rem;
+        padding: 0;
+    }
+
+    .fa-calendar-alt:before{
+        display: none;
+    }
+
+}
+
+@media all and (max-width: 768px){
+    .section-A{ 
+        display: block;
+    }
+
+    .image{
+        margin: auto;
+    }
+
+    .wrapper{
+        display: block;
+    }
+
+    .about-me, .form{
+        height: 350px;
+        width: 100%;
+    }
+
+    .form h3{
+        margin-top: 0;
+    }
+}
+
+@media all and (max-width: 450px){
+    .about p{
+        font-size: .9rem;
+    }
+}
+
+
+  

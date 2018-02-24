@@ -1,0 +1,239 @@
+/* Normalizing CSS */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* GRID SYSTEM */
+body{
+    display: grid;
+    grid-template-areas: 
+    "Header"
+    "Section-A"
+    "Section-B"
+    "Footer";
+}
+
+/* HEADER AND NAV */
+header{
+    grid-area: Header;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-areas: 
+    "Logo Social Nav";
+    height: 100px;
+    box-shadow: 1px 1px 30px #0c0c0c4f;    
+}
+
+/*Para melhor organização as Imagens estão no images.css*/
+.logotipo{ 
+    grid-area: Logo;
+    font-family: 'Lobster','cursive';
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
+.logotipo:hover{
+    font-size: 2rem;
+    color: rgba(56, 69, 143, 0.7);
+    animation-name: entrance;
+    animation-duration: 0.75s;
+}
+
+.social{
+    grid-area: Social;
+    font-size: 1.7rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.social li{
+    padding: 2px;
+}
+
+.social .fa-facebook:hover{
+    color: #3b5998;
+}
+
+.social .fa-instagram:hover{
+    color: #966842;
+}
+
+header nav{
+    grid-area: Nav;
+}
+
+header ul{
+    list-style: none;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+    transition: color .2s;
+}
+
+header a:hover{
+    color: rgb(161, 161, 161);
+}
+
+/* MAIN */
+.pictures{
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+    background: linear-gradient(-247deg,rgba(250, 14, 14, 0.1), rgba(47, 47, 206, 0.2));
+}
+
+.pictures a{
+    padding: 20px 0;
+}
+
+main a{
+    background-color: rgba(255,255,255,0);
+    text-decoration: none;    
+    display: flex;
+    transition: all .2s ease-in-out;
+}
+
+.pictures a:hover{
+    background-color: rgba(255, 255, 255, 0.11);
+    transition: all .2s ease-in-out;
+}
+
+
+/* ABOUT ME AND FORM SECTION */
+.wrapper{
+    box-shadow: -1px -1px 30px #0c0c0c4f;  
+    grid-area: Section-B;
+    display: flex;
+    background: linear-gradient(90deg, rgba(209, 208, 208,.5),
+    rgba(0, 162, 255, 0.3));
+    position: relative;
+}
+
+.wrapper h3{
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Raleway','sans-serif';
+    font-weight: 200;
+    text-shadow: 1px 1px 2px rgba(56, 56, 56,.4);
+}
+
+.about-me, .form{
+    height: 450px;
+    width: 100%;
+}
+
+.about-me, .about{
+    background: #F0E19E;
+    position: relative;
+}
+
+iframe{
+    margin: 0 auto;
+    
+}
+
+.about-me p{
+    padding: 0px 100px;
+    text-align: justify;
+    font-weight: 600;   
+    font-family: 'Raleway','sans-serif';
+    line-height: 30px;
+}
+
+.form{
+    background: #FC4442;
+    color: white;
+    border: none;
+}
+
+.form label, input, textarea{
+    position: relative;
+    display: block;
+    margin: 5px auto;
+    line-height: 1.2rem;
+    width: 60%;
+    padding: 1px;    
+}
+
+.form textarea{
+    height: 100px;
+    resize: none;
+}
+
+.form input::-webkit-input-placeholder{
+    font-family: 'Raleway','sans-serif';
+    font-size: .9rem;
+}
+
+.form textarea::-webkit-input-placeholder{
+    font-family: 'Raleway','sans-serif';
+    font-size: .9rem;
+}
+
+.form input[type="submit"]{
+    border: none;
+    height: 30px;
+    background-color: rgb(212, 212, 212);
+}
+
+.form input[type="submit"]:hover{
+    border: none;
+    border-radius: 0px;
+    background-color: rgb(189, 189, 189);
+}
+
+.goTop i{
+    font-size: 2rem;
+    position: fixed;
+    z-index: 3;
+    right: 50%;
+    bottom: 4px;
+    color: rgb(147, 118, 150);
+    transform: scalex(1.5);
+}
+
+.goTop i:hover{
+    color: rgba(175, 140, 179, 0.849);
+}
+
+/* FOOTER */
+footer{
+    grid-area: Footer;
+    background-color: #3E333F;
+    height: 60px;
+}
+
+.reserved{
+    margin-top: 3px;
+    text-align: center;
+    height: 30px;
+    color: rgb(147, 118, 150);
+}
+
+/* ANIMATION  */
+@keyframes entrance {
+    from,
+    50%,
+    75%,
+    to {animation-timing-function: ease-in-out;}
+  
+    0% {opacity: 0; transform: scale3d(0.3, 0.3, 0.3);}
+    50% {opacity: 1; transform: scale3d(1.03, 1.03, 1.03);}
+    75% {transform: scale3d(0.97, 0.97, 0.97);}
+    to {opacity: 1; transform: scale3d(1, 1, 1);}
+  }
+

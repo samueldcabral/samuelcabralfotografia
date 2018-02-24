@@ -1,0 +1,67 @@
+.image{
+    width: 320px;
+    height: 320px;
+    position: relative;
+    z-index: -1;
+    box-shadow: 1px 1px 10px #888;
+}
+
+#Ensaio1{
+    background: url('../img/Ensaio 1.jpg');
+    background-size: 100%;
+}
+
+#Ensaio2{
+    background: url('../img/Ensaio 2.jpg');  
+    background-size: 100%;
+}
+
+#Ensaio3{
+    background: url('../img/Ensaio 3.jpg');
+    background-size: 100%;
+}
+
+#Ensaio4{
+    background: url('../img/Ensaio 4.jpg');
+    background-size: 100%;
+}
+
+#Esporte1{
+    background: url('../img/Esporte 1.jpg');
+    background-size: 100%; 
+}
+
+#Esporte2{
+    background: url('../img/Esporte 2.jpg');
+    background-size: 100%;
+}
+
+#Paisagem1{
+    background: url('../img/Paisagem 1.jpg');
+    background-size: 100%;
+}
+
+#Paisagem2{
+    background: url('../img/Paisagem 2.jpg');
+    background-size: 100%;
+}
+
+#Paisagem3{
+    background: url('../img/Paisagem 3.jpg');
+    background-size: 100%;
+}
+
+#Structure1{
+    background: url('../img/Structure 1.jpg');
+    background-size: 100%;
+}
+
+#Structure2{
+    background: url('../img/Structure 2.jpg');
+    background-size: 100%;
+}
+
+#Structure3{
+    background: url('../img/Structure 3.jpg');
+    background-size: 100%;
+}
